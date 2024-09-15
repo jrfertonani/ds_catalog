@@ -1,6 +1,7 @@
 package back.resources;
 
 
+import back.services.categoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,5 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class categoryResource {
 
     @Autowired
-    private CategoryService service;
+    private categoryService service;
+
+    
 }
