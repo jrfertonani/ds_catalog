@@ -13,5 +13,5 @@ public class categoryResource {
     @Autowired
     private categoryService service;
 
-    
+
 }

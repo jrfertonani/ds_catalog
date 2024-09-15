@@ -1,8 +1,7 @@
 package back.domain.dtos;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
+import back.domain.entity.Category;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -19,6 +18,11 @@ public class categoryDTO implements Serializable {
     public categoryDTO(Long id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public categoryDTO(Category entity) {
+        this.id = entity.getId();
+        this.name = entity.getName();
     }
 
     public Long getId() {
